@@ -33,7 +33,16 @@ body, html {
     font-size: 1.5rem;
     color: white;
   }
-  
+  /* Active Menu Item Styles */
+.nav-item.active .nav-link {
+  box-shadow: 0 -2px 0 0 #ffffff inset;
+}
+
+/* Hover Effect Styles */
+.nav-item:hover .nav-link {
+  text-decoration: underline;
+}
+
   /* Hero Section */
   .hero {
     min-height: 100vh;
