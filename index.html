@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Ziegler | Home</title>
+
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/808b5f3881.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="three-d-background"></div>
+    <div class="three-d-object-container"></div>
+    <div class="content-container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <!-- Add logo or name here -->
+                    <a class="navbar-brand logo" href="index.html"><img src="images/AZ.png" alt="logo"></a>
+        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item" id="nav-home">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item" id="nav-about">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item" id="nav-projects">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item" id="nav-contact">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+        
+                        <!-- Add social media icons here -->
+                        <div class="social-media ml-3">
+                            <a href="https://www.linkedin.com/in/adam-ziegler1993/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <span class="mx-2 text-white">|</span>
+                            <a href="mailto:adam.ziegler1993@icloud.com"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+<!-- Hero Section -->
+<section class="hero">
+     <div class="container text-center">
+      <h1 class="hero-heading">Adam Ziegler</h1>
+      <p class="hero-subtitle">
+        Crafting Web Solutions with Passion and Precision
+      </p>
+      <p><img src="images/Adam_Ziegler_Pic.png" alt="Adam Ziegler"></p>
+      <a href="#projects" class="btn btn-danger btn-lg">View My Projects</a>
+    </div>
+    <div class="spaceship"></div> <!-- Add this line -->
+    <div class="spaceship-right"></div>
+  </section>
+
+  <!-- Featured Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project-card">
+                    <img src="images/Tindog Pic.png" alt="Tindog Project" class="img-fluid">
+                    <h3>Tindog</h3>
+                    <p>Landing page for Tindog, a fictional app that connects dogs with other dogs. A play on the popular app Tinder.</p>
+                    <a href="https://adam-ziegler1993.github.io/tindog/" class="btn btn-danger" target="_blank">View Project</a>
+                    <a href="https://github.com/adam-ziegler1993/tindog" class="btn btn-secondary" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <img src="images/First Order Pic.png" alt="Geology Project" class="img-fluid">
+                    <h3>Geology Company Website</h3>
+                    <p>Website for a geology company.</p>
+                    <a href="https://adam-ziegler1993.github.io/FirstOrderExploration/" class="btn btn-danger" target="_blank">View Project</a>
+                    <a href="https://github.com/adam-ziegler1993/FirstOrderExploration" class="btn btn-secondary" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!-- Skills Section -->
+<section class="skills">
+    <div class="container">
+        <h3 class="text-center mb-5">Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>jQuery</li>
+            <li>Node & Express.js</li>
+            <li>Git</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>REST</li>
+            <li>Blockchain Development</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container text-center">
+        <h3 class="mb-4">Interested in working together?</h3>
+        <a href="contact.html" class="btn btn-danger">Get in touch</a>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form">
+    <div class="container">
+        <h3 class="text-center mb-5">Get in Contact</h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p class="mb-0">&copy; 2023 Adam Ziegler. All rights reserved.</p>
+    </div>
+</footer>
+    </div>
+
+    <!-- Javascript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+

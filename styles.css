@@ -1,0 +1,158 @@
+/* Add your custom styles here */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    color: white;
+  }
+  .three-d-background {
+    background-image: url('images/nebula.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Add your other custom styles below */
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .logo {
+    max-width: 50px;
+  }
+  
+  .fa-linkedin, .fa-envelope {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-heading {
+    font-size: 4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+
+  
+  .spaceship {
+    background-image: url('images/spaceship.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    animation: float-left 4s ease-in-out infinite;
+  }
+  @keyframes float-left {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-120px) rotate(5deg);
+      }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+  .spaceship-right {
+    background-image: url('images/spaceship.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    animation: float-right 5s ease-in-out infinite;
+  } 
+  @keyframes float-right {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-120px) rotate(-5deg);
+      }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  
+  /* Projects Section */
+  .project-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    color: black;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Skills Section */
+  .skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+  }
+  
+  .skills li {
+    flex: 1 1 150px;
+    margin: 0.5rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* CTA Section */
+  .cta {
+    padding: 4rem 0;
+    background-color: black;
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    padding: 4rem 0;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 1rem 0;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
