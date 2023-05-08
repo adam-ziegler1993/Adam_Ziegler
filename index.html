@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Ziegler | Home</title>
 
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A brief description of your website's content and purpose.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+        
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Front-end Developer, Adam Ziegler">
+    <meta property="og:description" content="Hi! I'm a front-end developer.">
+    <meta property="og:image" content="images/adam.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+        
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <!-- Font Awesome  -->
-    <script src="https://kit.fontawesome.com/808b5f3881.js" crossorigin="anonymous"></script>
+    <script async src="https://kit.fontawesome.com/808b5f3881.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Stylesheet  -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGYZ4JH99L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BGYZ4JH99L');
+    </script>
 </head>
 
 <body>
-    <div class="three-d-background"></div>
-    <div class="three-d-object-container"></div>
     <div class="content-container">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <!-- Add logo or name here -->
+                    <!-- Logo -->
                     <a class="navbar-brand logo" href="index.html"><img src="images/AZ.png" alt="logo"></a>
         
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-        
+                    
+                    <!-- Navigation Bar  -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item" id="nav-home">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item" id="nav-about">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item" id="nav-projects">
-                                <a class="nav-link" href="projects.html">Projects</a>
+                                <a class="nav-link" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item" id="nav-contact">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
         
-                        <!-- Add social media icons here -->
+                        <!-- Social media icons -->
                         <div class="social-media ml-3">
                             <a href="https://www.linkedin.com/in/adam-ziegler1993/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                             <span class="mx-2 text-white">|</span>
@@ -65,14 +87,35 @@
      <div class="container text-center">
       <h1 class="hero-heading">Adam Ziegler</h1>
       <p class="hero-subtitle">
-        Crafting Web Solutions with Passion and Precision
+        Front-End Developer
       </p>
       <p><img src="images/Adam_Ziegler_Pic.png" alt="Adam Ziegler"></p>
-      <a href="#projects" class="btn btn-danger btn-lg">View My Projects</a>
+      <a href="#projects" class="btn btn-hero btn-danger btn-lg">View My Projects</a>
+      <a href="https://docs.google.com/document/d/1j3G_9tExVHLp8oyrJG4MIpNqf9nyqV9IRbSr_uXM9WA/edit?usp=share_link" class="btn btn-hero btn-danger btn-lg">Resume</a>
     </div>
     <div class="spaceship"></div> <!-- Add this line -->
     <div class="spaceship-right"></div>
   </section>
+
+<!-- About Section  -->
+<section id="about" class="bg-dark">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="about-pic" src="images/Adam.png" alt="Adam Ziegler" class="img-fluid rounded mb-3">
+        </div>
+        <div class="col-lg-6">
+            <h2>About Adam Ziegler</h2>
+            <p class="lead" >Hey! Thanks for stopping by.</p>
+            <p>I'm Adam.</p>
+            <p>I started learning programming because I've always been curious how programmers make the internet work, and then continued learning because it's super interesting and I love learning new things. Front-end development intrigues me most about programming.</p>
+            <p>Most of my days include a walk in the local nature center, working out, planning events with friends, and looking for new places to explore. (and of course, coding)</p>
+            <p>Feel free to look around! If you'd like to get in touch, don't hesitate to <a href="#contact">contact me</a>.</p>
+        </div>
+    </div>
+</div>
+</section>
+
 
   <!-- Featured Projects Section -->
 <section id="projects" class="projects">
@@ -84,6 +127,7 @@
                     <img src="images/Tindog Pic.png" alt="Tindog Project" class="img-fluid">
                     <h3>Tindog</h3>
                     <p>Landing page for Tindog, a fictional app that connects dogs with other dogs. A play on the popular app Tinder.</p>
+                    <p>Skills used: HTML, CSS, Bootstrap</p>
                     <a href="https://adam-ziegler1993.github.io/tindog/" class="btn btn-danger" target="_blank">View Project</a>
                     <a href="https://github.com/adam-ziegler1993/tindog" class="btn btn-secondary" target="_blank">GitHub Repository</a>
                 </div>
@@ -93,6 +137,7 @@
                     <img src="images/First Order Pic.png" alt="Geology Project" class="img-fluid">
                     <h3>Geology Company Website</h3>
                     <p>Website for a geology company.</p>
+                    <p>Skills used: HTML, CSS, Javascript</p>
                     <a href="https://adam-ziegler1993.github.io/FirstOrderExploration/" class="btn btn-danger" target="_blank">View Project</a>
                     <a href="https://github.com/adam-ziegler1993/FirstOrderExploration" class="btn btn-secondary" target="_blank">GitHub Repository</a>
                 </div>
@@ -102,6 +147,7 @@
                     <img src="images/BMI_calculator.png" alt="BMI Calculator Project" class="img-fluid">
                     <h3>BMI Calculator</h3>
                     <p>Landing page for a BMI calculator. This calculator helps users figure out their BMI by inputting their personal stats.</p>
+                    <p>Skills used: HTML, CSS, Bootstrap, Javascript</p>
                     <a href="https://adam-ziegler1993.github.io/BMI_Calculator/" class="btn btn-danger" target="_blank">View Project</a>
                     <a href="https://github.com/adam-ziegler1993/BMI_Calculator" class="btn btn-secondary" target="_blank">GitHub Repository</a>
                 </div>
@@ -141,28 +187,29 @@
 </section>
 
 <!-- Contact Form Section -->
-<section class="contact-form">
-    <div class="container">
+<section class="contact-form" id="contact">
+    <form id="contact-form" action="https://formspree.io/f/xbjewbpd" method="POST">
         <h3 class="text-center mb-5">Get in Contact</h3>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-danger">Send Message</button>
-        </form>
+    <div class="form-group">
+      <label for="name" >Name</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
     </div>
+  
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="message" >Message</label>
+      <textarea class="form-control" name="message" id="message" rows="3" placeholder="Enter your message" required></textarea>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
 </section>
+
 
 <!-- Footer -->
 <footer class="footer text-center">
